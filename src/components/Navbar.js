@@ -2,20 +2,27 @@ import React from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  function goToSchedule(sectionId) {
+    const schedule = document.getElementById(sectionId);
+    schedule.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function goToContacts(sectionId) {
+    const contacts = document.getElementById(sectionId);
+    contacts.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <div>
       <div className="container-fluid navbar justify-content-center">
         <header className="header">
           <nav className="navbar navbar-expand-lg navbar-dark pt-2">
             <div className="container-fluid">
-              <a>
-                <img
-                  src="/lippe_logo.png"
-                  className="lippelogo"
-                  width={150}
-                  alt="Lippe Braga"
-                />
-              </a>
+              <img
+                src="/lippe_logo.png"
+                className="lippelogo"
+                width={150}
+                alt="Lippe Braga"
+              />
               <button
                 className="navbar-toggler"
                 type="button"
@@ -31,23 +38,23 @@ const Navbar = () => {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a
+                    <button
+                      onClick={() => goToSchedule("schedule")}
                       className="nav-link active"
                       aria-current="page"
-                      href="#schedule"
                       id="navItem"
                     >
                       Agenda
-                    </a>
+                    </button>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <button
+                      onClick={() => goToContacts("contacts")}
                       className="nav-link active"
-                      href="#contacts"
                       id="navItem"
                     >
                       Contato
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </div>
