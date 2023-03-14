@@ -1,0 +1,49 @@
+.containers {
+  width: 100%;
+  overflow: auto;
+  background-color: transparent;
+  text-align: right;
+}
+
+.description {
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.219);
+  font-size: 0.9em;
+}
+
+.description h1 {
+  background-color: transparent;
+}
+
+.description p {
+  align-items: end;
+  text-align: right;
+  background-color: transparent;
+}
+
+@media (min-width: 580px) {
+  .description,
+  .description p {
+    background-color: transparent;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .description,
+  .description p {
+    background-color: transparent;
+    font-size: 1.1em;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description,
+  .description p {
+    background-color: transparent;
+    font-size: 1.3em;
+  }
+}

@@ -1,0 +1,21 @@
+.schedule {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
+h1 {
+  background-color: transparent;
+}
+
+.schedule a {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+.schedule a:hover {
+  color: gray;
+}

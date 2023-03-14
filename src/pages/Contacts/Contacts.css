@@ -1,0 +1,53 @@
+.contacts-container {
+  background-color: transparent;
+}
+
+.contacts {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.contacts a {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.829);
+
+  transition: 0.2s;
+}
+.contacts > a:hover {
+  color: gray;
+  font-size: 1.1em;
+  padding: 11px;
+}
+
+@media (min-width: 425px) {
+  .contacts > a {
+    margin: 15px;
+    font-size: 1.2em;
+  }
+  .contacts > a:hover {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts > a {
+    font-size: 1.5em;
+  }
+  .contacts > a:hover {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contacts > a {
+    font-size: 2em;
+  }
+  .contacts > a:hover {
+    font-size: 2.3em;
+  }
+}

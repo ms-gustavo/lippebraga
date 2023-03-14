@@ -1,0 +1,9 @@
+#navItem,
+#navbarNav {
+  color: white;
+  transition: 0.5s;
+}
+
+#navItem:hover {
+  color: gray;
+}
